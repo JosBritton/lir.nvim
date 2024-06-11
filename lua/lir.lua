@@ -44,7 +44,7 @@ local function readdir(path)
       devicons = nil,
     }
 
-    local prefix = config.values.hide_cursor and "" or " "
+    local prefix = " "
 
     if config.values.devicons and config.values.devicons.enable then
       local icon, highlight_name = devicons.get_devicons(name, is_dir)
